@@ -24,12 +24,21 @@ jobs:
       - name: fixture census
         run: |
           ./dirge forge fixtures
-          ./dirge scan fixtures/01_newsletter.eml; test $? -eq 0
-          ./dirge scan fixtures/04_ai_template.eml; test $? -eq 1
-          ./dirge scan fixtures/02_spoofed_bank.eml; test $? -eq 10
-          ./dirge scan fixtures/03_smuggle.eml; test $? -eq 10
-          ./dirge scan fixtures/05_macro_docx.eml; test $? -eq 10
-          ./dirge scan fixtures/06_inflation.eml; test $? -eq 10
+          check() {
+            want=$1; shift
+            got=0
+            ./dirge "$@" || got=$?
+            if [ "$got" -ne "$want" ]; then
+              echo "expected exit $want, got $got for: dirge $*"
+              exit 1
+            fi
+          }
+          check 0 scan fixtures/01_newsletter.eml
+          check 1 scan fixtures/04_ai_template.eml
+          check 10 scan fixtures/02_spoofed_bank.eml
+          check 10 scan fixtures/03_smuggle.eml
+          check 10 scan fixtures/05_macro_docx.eml
+          check 10 scan fixtures/06_inflation.eml
 
       - name: determinism
         run: |
