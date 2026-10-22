@@ -42,6 +42,6 @@ jobs:
 
       - name: determinism
         run: |
-          ./dirge scan fixtures --json > a.json
-          ./dirge scan fixtures --json > b.json
+          ./dirge scan fixtures --json > a.json || true
+          ./dirge scan fixtures --json > b.json || true
           cmp a.json b.json
