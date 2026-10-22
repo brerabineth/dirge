@@ -1,0 +1,7 @@
+dirge
+*.cmi
+*.cmx
+*.o
+fixtures/
+a.json
+b.json
