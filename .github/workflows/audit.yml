@@ -1,0 +1,37 @@
+name: audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: toolchain
+        run: sudo apt-get update && sudo apt-get install -y ocaml-nox
+
+      - name: build
+        run: make
+
+      - name: selftest
+        run: ./dirge selftest
+
+      - name: fixture census
+        run: |
+          ./dirge forge fixtures
+          ./dirge scan fixtures/01_newsletter.eml; test $? -eq 0
+          ./dirge scan fixtures/04_ai_template.eml; test $? -eq 1
+          ./dirge scan fixtures/02_spoofed_bank.eml; test $? -eq 10
+          ./dirge scan fixtures/03_smuggle.eml; test $? -eq 10
+          ./dirge scan fixtures/05_macro_docx.eml; test $? -eq 10
+          ./dirge scan fixtures/06_inflation.eml; test $? -eq 10
+
+      - name: determinism
+        run: |
+          ./dirge scan fixtures --json > a.json
+          ./dirge scan fixtures --json > b.json
+          cmp a.json b.json

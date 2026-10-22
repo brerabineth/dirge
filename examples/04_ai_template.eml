@@ -1,0 +1,30 @@
+From: HR Portal <no-reply@hr-portal.example>
+To: staff@example.org
+Subject: Performance review window opens Monday
+Date: Wed, 7 Oct 2026 09:15:00 +0000
+Message-ID: <hr-2026-41@hr-portal.example>
+Authentication-Results: mx.example.org; spf=pass smtp.mailfrom=no-reply@hr-portal.example; dkim=pass header.d=hr-portal.example; dmarc=pass header.from=hr-portal.example
+Received: from mailer.hr-portal.example (mailer.hr-portal.example [203.0.113.90]) by mx.example.org with ESMTPS id h7; Wed, 7 Oct 2026 09:15:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<!-- Main Content -->
+<div style="border-left:4px solid #2b6cb0; padding:12px; background:#f7fafc">
+
+<!-- Header Section -->
+
+<h2>Performance review window opens Monday</h2>
+
+<!-- Click to Call -->
+
+<p>Your review period starts on Monday. Please acknowledge receipt.</p>
+
+<a href="https://hr-portal.example/reviews" style="display:inline-block; background:#2b6cb0; color:#ffffff; border-radius:8px; padding:10px 18px">Open reviews</a>
+
+<a href="https://hr-portal.example/help" style="display:inline-block; background:#4a5568; color:#ffffff; border-radius:8px; padding:10px 18px">Contact HR support</a>
+
+</div>
+<!-- Footer Section -->
+<p>HR Portal, example.org</p>
+</body></html>

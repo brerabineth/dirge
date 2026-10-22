@@ -1,0 +1,31 @@
+From: SecureBank Security Team <alerts@securebank-verify.com>
+To: victim@example.org
+Subject: =?utf-8?B?QWN0aW9uIHJlcXVpcmVkOiB1bnVzdWFsIHNpZ24taW4gYXR0ZW1wdA==?=
+Date: Wed, 7 Oct 2026 09:15:00 +0000
+Message-ID: <20261007091500@mail.gmail.com>
+Reply-To: securebank.support@recovery-acct.example
+Return-Path: <bounce@mailer-relay.example>
+Authentication-Results: mx.example.org; spf=fail smtp.mailfrom=alerts@securebank-verify.com; dkim=none; dmarc=fail header.from=securebank-verify.com
+Received: from vps-4451.hosting-provider.example (vps-4451.hosting-provider.example [198.51.100.77]) by mx.example.org with SMTP id z9; Wed, 7 Oct 2026 09:15:10 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="XBX2"
+
+--XBX2
+Content-Type: text/plain; charset=utf-8
+
+Dear customer,
+
+We detected an unusual sign-in attempt on your account. To protect your
+funds you must verify your account within 24 hours or access will be
+suspended permanently.
+
+Confirm your identity here: https://securebank-verify.com/login?next=https://bit.ly/sb9a1
+
+SecureBank Security Team
+--XBX2
+Content-Type: application/octet-stream; name="Invoice_4471.pdf.exe"
+Content-Disposition: attachment; filename="Invoice_4471.pdf.exe"
+Content-Transfer-Encoding: base64
+
+TVavJNUAAAA
+--XBX2--

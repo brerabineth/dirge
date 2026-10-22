@@ -1,0 +1,18 @@
+From: Corpus Weekly <digest@corpus-weekly.example>
+To: reader@example.org
+Subject: [corpus weekly] issue 141: pcap forensics
+Date: Wed, 7 Oct 2026 09:15:00 +0000
+Message-ID: <issue-141@corpus-weekly.example>
+List-Id: <weekly.corpus-weekly.example>
+List-Unsubscribe: <https://corpus-weekly.example/unsub>
+Authentication-Results: mx.example.org; spf=pass smtp.mailfrom=digest@corpus-weekly.example; dkim=pass header.d=corpus-weekly.example; dmarc=pass header.from=corpus-weekly.example
+Received: from mx.corpus-weekly.example (mx.corpus-weekly.example [203.0.113.10]) by mx.example.org with ESMTPS id a1; Wed, 7 Oct 2026 09:14:02 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Issue 141 is out: pcap forensics without a SIEM, plus a field note on
+storing triage output for reuse.
+
+Read online: https://corpus-weekly.example/141
+Unsubscribe: https://corpus-weekly.example/unsub
